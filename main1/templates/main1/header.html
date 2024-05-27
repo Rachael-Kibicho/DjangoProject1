@@ -4,18 +4,19 @@
 
         <link href = '{% static "tinymce/css/prism.css" %}' rel="stylesheet">
 
-        <!-- Compiled and minified CSS -->
-        <link href="{% static 'main/css/materialize.css' %}" rel="stylesheet">
+
 
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <link rel="stylesheet" href="{% static 'main/css/color.css' %}">
 </head>
 
-</body>
+<body class = "background1">
     {% include "main1/includes/navbar.html" %}
     {% include "main1/includes/messages.html" %}
 
-    <div class="container">
+    <div class=" background1 container text-centre">
         <br>
         {% block content %}
         {% endblock %}
